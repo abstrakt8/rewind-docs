@@ -7,8 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Rewind Docs',
-  tagline: 'Read before you ask',
-  url: 'https://rewind-docs.a',
+  tagline: 'Docs for Rewind',
+  url: 'https://rewind.abstrakt.sh',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,7 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/abstrakt8/rewind-docs/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/abstrakt8/rewind-docs/tree/master/',
         },
         blog: {
           showReadingTime: true,
@@ -71,11 +71,11 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/abstrakt8/rewind-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -97,16 +97,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Discord osu! University',
+                href: 'https://discord.gg/QubdHdnBVg',
               },
               {
-                label: 'Discord',
+                label: 'Discord (abstrakt\'s projects)',
                 href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
@@ -114,17 +110,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'GitHub Rewind',
+                href: 'https://github.com/abstrakt8/rewind',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} abstrakt. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
