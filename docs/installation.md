@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Windows
 
-First download the .exe file from the [release page](https://github.com/abstrakt8/rewind/releases/latest) e.g. "Rewind-Setup-0.1.0.exe"
+First download the .exe file from the [release page](https://github.com/abstrakt8/rewind/releases/latest) e.g. "Rewind-Setup-x.y.z.exe"
 
 Windows might show you some security warnings about the execution file since it is not verified with a code certificate (they cost hundreds of dollars). Just click on "More Info" -> "Run anyway" to run the installation.
 

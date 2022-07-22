@@ -11,9 +11,9 @@ Each grey cross `x` stands for one recorded "replay frame". Usually osu! tries t
 
 Certain frames are interesting and are therefore highlighted (enlarged + color):
 
-* Orange: left click (z)
-* Green: right click (x)
-* Cyan: both clicks at the same time
+* Orange: Left click (z)
+* Green: Right click (x)
+* Cyan: Both clicks at the same time
 
 Technically speaking we don’t know the true positions of the cursor between two recorded frames, that’s why Rewind tries to predict them via interpolation to give a smooth feeling.
 
@@ -40,8 +40,8 @@ There are some tech maps that have very weird slider shapes where you can't even
 The graph that looks like a mountain is the difficulty graph and it is an estimation of how difficult that part is (can be disabled in the settings)
 
 The small colored ticks are:
-* Red: miss
-* Orange: slider break
+* Red: Miss
+* Orange: Slider break
 * Yellow: 50
 * Green: 100
 
@@ -51,7 +51,7 @@ The small colored ticks are:
 ![statistics](https://i.imgur.com/jR93eL9.png)
 
 * Misses, 300, 100, 50: number of 300, 100, 50s, misses so far
-* MaxCombo: max combo so far (the number you would see in the leaderboard)
+* MaxCombo: Max combo so far (the number you would see in the leaderboard)
 
 * UR (Unstable Rate) is the standard deviation of your hit errors multiplied by 10. In other words, it indicates how precise your hits were.
 * Mean is the average of your hit errors. If you are experienced enough, you can take this number to adjust your local offset accordingly (if you have no idea what I said, don't do it).
