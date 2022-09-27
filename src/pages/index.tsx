@@ -10,7 +10,7 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero", styles.heroBanner)}>
       <div className="container">
         <img
           src={"/img/icon.png"}
@@ -20,23 +20,40 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
+            className="button button--secondary button--lg download-button"
+            to="https://github.com/abstrakt8/rewind/releases/latest"
           >
-            Get Started
+            <span>Download for</span>
+            <div className={"os-logos"}>
+              <img className={"os"} src={"/img/windows.svg"} />
+              <img className={"os"} src={"/img/linux.svg"} />
+              <img className={"os"} src={"/img/apple.svg"} />
+            </div>
           </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Get Started
-          </Link>
+          {/*<Link*/}
+          {/*  className="button button--secondary button--lg"*/}
+          {/*  to="/docs/intro"*/}
+          {/*>*/}
+          {/*  Docs*/}
+          {/*</Link>*/}
         </div>
       </div>
     </header>
   );
 }
-function Showcase() {}
+
+function Showcase() {
+  return (
+    <div className={"container showcase"}>
+      <h1 className={""}>You missed it? Just Rewind.</h1>
+      <img
+        src={"/img/showcase.gif"}
+        alt={"rewind showcase"}
+        className={"box"}
+      />
+    </div>
+  );
+}
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -46,7 +63,10 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <main>{/*<HomepageFeatures />*/}</main>
+      <main>
+        <Showcase />
+        {/*<HomepageFeatures />*/}
+      </main>
     </Layout>
   );
 }
