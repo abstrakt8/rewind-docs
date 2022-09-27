@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Rewind Blog</title>
+        <link>https://rewind.abstrakt.sh/changelog</link>
+        <description>Rewind Blog</description>
+        <lastBuildDate>Sat, 01 Oct 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[0.2.0]]></title>
+            <link>https://rewind.abstrakt.sh/changelog/0.2.0</link>
+            <guid>0.2.0</guid>
+            <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[* TODO 1]]></description>
+            <content:encoded><![CDATA[<ul><li>TODO 1</li><li>TODO 2</li></ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[0.1.0]]></title>
+            <link>https://rewind.abstrakt.sh/changelog/0.1.0</link>
+            <guid>0.1.0</guid>
+            <pubDate>Fri, 29 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[🚀 Initial Release]]></description>
+            <content:encoded><![CDATA[<p>🚀 Initial Release</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
