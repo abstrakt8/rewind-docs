@@ -1,53 +1,52 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Rewind Docs',
-  tagline: 'Docs for Rewind',
-  url: 'https://rewind.abstrakt.sh',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "Rewind",
+  tagline: "Docs for Rewind",
+  url: "https://rewind.abstrakt.sh",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'abstrakt8', // Usually your GitHub org/user name.
-  projectName: 'rewind-docs', // Usually your repo name.
+  organizationName: "abstrakt8", // Usually your GitHub org/user name.
+  projectName: "rewind-docs", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/abstrakt8/rewind-docs/tree/master/',
+          editUrl: "https://github.com/abstrakt8/rewind-docs/tree/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -58,60 +57,70 @@ const config = {
 
     ({
       colorMode: {
-        defaultMode: 'dark'
+        defaultMode: "dark",
       },
       navbar: {
-        title: 'My Site',
+        title: "Rewind",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "Rewind Logo",
+          src: "img/icon.png",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Docs',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Docs",
+          },
+          {
+            to: "blog",
+            position: "left",
+            label: "Changelog",
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/abstrakt8/rewind-docs',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/abstrakt8/rewind-docs",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Tutorial",
+                to: "/docs/intro",
+              },
+              {
+                label: "Changelog",
+                to: "/changelog",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Discord osu! University',
-                href: 'https://discord.gg/QubdHdnBVg',
+                label: "Discord osu! University",
+                href: "https://discord.gg/QubdHdnBVg",
               },
               {
-                label: 'Discord (abstrakt\'s projects)',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: "Discord (abstrakt's projects)",
+                href: "https://discordapp.com/invite/docusaurus",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'GitHub Rewind',
-                href: 'https://github.com/abstrakt8/rewind',
+                label: "GitHub",
+                href: "https://github.com/abstrakt8/rewind",
               },
             ],
           },
