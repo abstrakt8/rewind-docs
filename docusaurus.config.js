@@ -39,11 +39,13 @@ const config = {
           editUrl: "https://github.com/abstrakt8/rewind-docs/tree/master/",
         },
         blog: {
-          showReadingTime: true,
+          routeBasePath: "changelog",
+          path: "changelog",
+          // showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -73,7 +75,7 @@ const config = {
             label: "Docs",
           },
           {
-            to: "blog",
+            to: "changelog",
             position: "left",
             label: "Changelog",
           },
