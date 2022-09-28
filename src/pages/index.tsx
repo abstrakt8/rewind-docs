@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import styles from "./index.module.css";
 
@@ -25,9 +24,9 @@ function HomepageHeader() {
           >
             <span>Download for</span>
             <div className={"os-logos"}>
-              <img className={"os"} src={"/img/windows.svg"} />
-              <img className={"os"} src={"/img/linux.svg"} />
-              <img className={"os"} src={"/img/apple.svg"} />
+              <img className={"os"} src={"/img/windows.svg"} alt={"Windows"} />
+              <img className={"os"} src={"/img/linux.svg"} alt={"Linux"} />
+              <img className={"os"} src={"/img/apple.svg"} alt={"Apple"} />
             </div>
           </Link>
           {/*<Link*/}
@@ -37,21 +36,16 @@ function HomepageHeader() {
           {/*  Docs*/}
           {/*</Link>*/}
         </div>
+        <div className={"container showcase"}>
+          <h1 className={""}>Missed it? Just Rewind.</h1>
+          <img
+            src={"/img/showcase.gif"}
+            alt={"rewind showcase"}
+            className={"box"}
+          />
+        </div>
       </div>
     </header>
-  );
-}
-
-function Showcase() {
-  return (
-    <div className={"container showcase"}>
-      <h1 className={""}>You missed it? Just Rewind.</h1>
-      <img
-        src={"/img/showcase.gif"}
-        alt={"rewind showcase"}
-        className={"box"}
-      />
-    </div>
   );
 }
 
@@ -64,7 +58,7 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <Showcase />
+        {/*<Showcase />*/}
         {/*<HomepageFeatures />*/}
       </main>
     </Layout>
